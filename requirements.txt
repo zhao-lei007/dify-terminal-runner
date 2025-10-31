@@ -1,0 +1,22 @@
+# Dify Plugin SDK (Note: Using beta version, will update when stable version is released)
+# dify-plugin>=0.0.1b22
+# For now, we don't need dify-plugin SDK for local testing
+# The plugin can be integrated with Dify without the SDK
+
+# Data Science Libraries
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+
+# Code Execution & Security
+RestrictedPython>=6.2
+
+# Utilities
+requests>=2.31.0
+python-dateutil>=2.8.2
+pytz>=2023.3
+
+# File & Session Management
+filelock>=3.12.0

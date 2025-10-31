@@ -1,0 +1,29 @@
+{
+  "name": "terminal_runner",
+  "type": "tool",
+  "version": "0.2.0",
+  "description": "Execute Python code in Dify sandbox and return raw results. No insights.",
+  "author": "DaddyTech",
+  "inputs": [
+    {
+      "name": "code",
+      "type": "string",
+      "required": true,
+      "description": "Python code snippet to execute (no OS/system calls)."
+    },
+    {
+      "name": "session_id",
+      "type": "string",
+      "required": true,
+      "description": "Session identifier to persist temp files/artifacts across rounds."
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "object",
+      "description": "Raw execution result: status/returncode/stdout/stderr/artifacts."
+    }
+  ],
+  "entrypoint": "main:run"
+}
